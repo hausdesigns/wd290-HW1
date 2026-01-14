@@ -7,15 +7,23 @@ body {
   line-height: 1.5;
 }
 
+
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 80%;
+  height: 80%;
+  display: flex;
 }
 
 .container {
   width: min(1100px, 92%);
   margin: 0 auto;
+  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .skip-link {
@@ -67,6 +75,12 @@ img {
   border-radius: 10px;
   background: #fff;
   cursor: pointer;
+}
+
+.content {
+  padding: 1rem 0;
+  flex-direction: row;
+  display: flex;
 }
 
 /* MOBILE: dropdown sits under header, not inside the flex row */
@@ -139,23 +153,51 @@ img {
   padding: 3rem 0;
 }
 
-.hero-media img {
-  border-radius: 12px;
+.contain {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
 }
 
+.hero-media {
+  margin-left: 2rem;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.hero-media img {
+  border-radius: 12px;
+
+   ;
+}
+
+.hero-text {
+  justify-content: flex-start;
+}
 .section {
-  padding: 2.5rem 0;
+  padding: 5rem 0;
+  flex-direction: column;
+  display: flex;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .section-alt {
   background: #f7f7f7;
+
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 14px;
   padding: 1rem;
-  background: #fff;
+  background: #865b5b;
+  
+  
 }
 
 .card img {
@@ -163,7 +205,28 @@ img {
   margin-bottom: .75rem;
 }
 
+.card-row { 
+  display: flex;      
+  flex-direction: row;
+  gap: 10px;          
+  align-items: center;
+}
+
 .site-footer {
   border-top: 1px solid #ddd;
   padding: 1.5rem 0;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-row {
+  display: flex;      
+  flex-direction: row;
+  gap: 10px;          
+  align-items: center;
+
 }

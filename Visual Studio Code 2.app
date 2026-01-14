@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fix + Flex</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -31,9 +31,9 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title" class="row">
-      <div class="contain hero-inner">
-        <div class="hero-copy" class="hero-text">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
           <h1 id="hero-title">Build it clean. Make it flex.</h1>
           <p class="lead">
             This page is semantic, but it has problems. Fix the HTML, then style it with CSS and Flexbox.
@@ -60,15 +60,15 @@
       
         <p class="muted">Make these responsive using Flexbox. On small screens they stack. On larger screens they form columns.</p>
 
-        <div class="card-row" class="img">
+        <div class="card-row">
           <article class="card">
-            <img
+            <img>
               src="https://picsum.photos/seed/card1/800/500"
               alt="Card image 1"
               width="800"
               height="500"
               loading="lazy"
-            />
+            </img>
             
             <h3>Card One</h3>
             <p>Short description goes here. Keep it readable.</p>
@@ -89,13 +89,13 @@
           </article>
 
           <article class="card">
-            <img
+            <img>
               src="https://picsum.photos/seed/card3/800/500"
               alt="Card image 3"
               width="800"
               height="500"
               loading="lazy"
-            />
+            </img>
             
             <h3>Card Three</h3>
             <p>Third card. Your layout should wrap nicely.</p>
@@ -107,11 +107,8 @@
 
     <section class="section section-alt" id="resources">
       <div class="container content-split">
-          
-        <h2>Content Area</h2>
-
         <article class="content">
-         
+          <h2>Content Area</h2>
 
           <img
             src="https://picsum.photos/seed/content/1200/700"
