@@ -79,7 +79,7 @@ img {
 
 .content {
   padding: 1rem 0;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
 }
 
@@ -229,4 +229,10 @@ img {
   gap: 10px;          
   align-items: center;
 
+}
+
+.sidebar {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: flex-end;
 }
